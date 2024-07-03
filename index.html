@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Memoria - Demon Slayer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="video-background">
+    <video autoplay muted loop id="bgVideo">
+      <source src="demonslayer.mp4" type="video/mp4">
+      Tu navegador no soporta la etiqueta de video.
+    </video>
+  </div>
+  <div class="game-container">
+    <h1>Juego de Memoria - Demon Slayer</h1>
+    <div id="timer">Tiempo restante: 60s</div>
+    <div class="game-board" id="gameBoard">
+      <!-- Las tarjetas se generarán aquí -->
+    </div>
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">&times;</span>
+      <h2>Game Over...🤭</h2>
+      <img class="game_over" src="images/game_over.gif" alt="Game Over">
+      <div class="buttons">
+        <button id="restartGame">Iniciar nueva partida</button>
+        <button id="closeGame">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
