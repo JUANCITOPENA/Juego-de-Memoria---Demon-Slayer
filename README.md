@@ -4,6 +4,8 @@
 
 Este es un juego de memoria simple basado en los personajes de Demon Slayer. El objetivo del juego es encontrar todos los pares de cartas iguales en un tiempo limitado de 60 segundos. El juego está implementado utilizando HTML, CSS y JavaScript, proporcionando una experiencia visual atractiva con un video de fondo.
 
+![](image/IMG1.png)
+
 ## Tecnologías y Recursos Utilizados
 
 - **HTML**: Para la estructura del contenido del juego.
