@@ -38,7 +38,7 @@ Este es un juego de memoria simple basado en los personajes de Demon Slayer. El 
 ### Navega al directorio del proyecto.
 
 cd nombre_del_repositorio
-Abre el archivo index.html en tu navegador.
+Abre el archivo [index.html](https://juancitopena.github.io/Juego-de-Memoria---Demon-Slayer/) en tu navegador.
 
 ### Características
 Video de Fondo: Un video de fondo responsivo que se adapta a cualquier tamaño de pantalla.
