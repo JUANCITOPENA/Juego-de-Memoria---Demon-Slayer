@@ -33,20 +33,20 @@ Este es un juego de memoria simple basado en los personajes de Demon Slayer. El 
    git clone https://github.com/tu_usuario/nombre_del_repositorio.git
 
 
-## Navega al directorio del proyecto.
+### Navega al directorio del proyecto.
 
 cd nombre_del_repositorio
 Abre el archivo index.html en tu navegador.
 
-## Características
+### Características
 Video de Fondo: Un video de fondo responsivo que se adapta a cualquier tamaño de pantalla.
 Temporizador: Un temporizador que cuenta regresivamente desde 60 segundos.
 Modal de Game Over: Una ventana modal que aparece cuando se acaba el tiempo, con una animación y opciones para reiniciar el juego o cerrarlo.
 
-## Contribuciones
+### Contribuciones
 ¡Las contribuciones son bienvenidas! Si deseas contribuir al proyecto, puedes hacerlo de las siguientes maneras:
 
-## Implementar nuevas características: Como niveles de dificultad.
+### Implementar nuevas características: Como niveles de dificultad.
 Mejorar la interfaz de usuario: O agregar nuevas animaciones.
 Optimizar el código existente: Para un mejor rendimiento.
 
@@ -55,16 +55,16 @@ Haz un fork del repositorio.
 Crea una nueva rama para tu característica o corrección de error.
 git checkout -b nombre-de-tu-rama
 
-## Realiza tus cambios y haz un commit.
+### Realiza tus cambios y haz un commit.
 git commit -m "Descripción de tus cambios"
 Sube tus cambios a tu fork.
 git push origin nombre-de-tu-rama
 Abre un Pull Request en GitHub.
 
-## Licencia
+### Licencia
 Este proyecto está licenciado bajo la Licencia MIT. Puedes ver el archivo de la licencia aquí.
 
-## Apóyanos  
+### Apóyanos  
 
 Si te gusta este proyecto, por favor:
 
@@ -75,9 +75,13 @@ Comparte el repositorio con tus amigos y en tus redes sociales.
 ## Contacto
 Si tienes alguna pregunta o sugerencia, no dudes en ponerte en contacto conmigo:
 
-## Correo electrónico: tu_email@example.com
-Twitter: @tu_usuario
-LinkedIn: Tu Nombre
+1. 🎬 **YouTube**: [@JuancitoPenaV](https://www.youtube.com/@JuancitoPenaV)
+2. 👨‍💼 **LinkedIn**: [Juancito Peña](https://www.linkedin.com/in/juancitope%C3%B1a/)
+3. 📰 **Blog**: [Adviser Tecnology](https://advisertecnology.com/)
+4. 📷 **Instagram**: [@juancito.pena.v](https://www.instagram.com/juancito.pena.v/)
+5. 📑 **Facebook**: [Juancito Peña V](https://www.facebook.com/juancito.p.v)
+6. 🐦 **Twitter**: [@JuancitoPenaV](https://twitter.com/JuancitoPenaV)
+7. 📰 **Blog**: [Adviser Tecnology](https://advisertecnology.com/)
 
 ## Comparte el Repositorio
 ¡Ayúdanos a hacer crecer este proyecto compartiéndolo!
