@@ -6,7 +6,7 @@ Este es un juego de memoria simple basado en los personajes de Demon Slayer. El 
 
 ![](images/IMG1.jpg)
 
-![](images/IMG4.jpg)
+![](images/IMG2.jpg)
 
 ![](images/IMG3.jpg)
 
