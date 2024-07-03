@@ -1,5 +1,7 @@
 # Juego de Memoria - Demon Slayer
 
+¡Hola! 👋 Gracias por visitar este repositorio en mi GitHub. Mi nombre es Juancito Peña, ¡es un gusto tenerte aquí! Puedes descargar o clonar este repositorio, usarlo y compartirlo. Solo asegúrate de darme una estrella ⭐ y mencionarme cuando lo compartas. ¡Muchas gracias! 🚀
+
 ## Descripción del Proyecto
 
 Este es un juego de memoria simple basado en los personajes de Demon Slayer. El objetivo del juego es encontrar todos los pares de cartas iguales en un tiempo limitado de 60 segundos. El juego está implementado utilizando HTML, CSS y JavaScript, proporcionando una experiencia visual atractiva con un video de fondo.
