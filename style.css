@@ -1,119 +1,123 @@
 body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
+    font-family: Arial, sans-serif; /* Establece la fuente a Arial */
+    display: flex; /* Usa Flexbox para el diseño */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    height: 100vh; /* Altura de la ventana gráfica completa */
+    background-color: #f0f0f0; /* Color de fondo gris claro */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
 }
-h1, #timer{
-    color: white;
+
+h1, #timer {
+    color: white; /* Color de texto blanco para el título y el temporizador */
 }
 
 .video-background {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    overflow: hidden;
+    position: fixed; /* Fija el video de fondo en su posición */
+    top: 0; /* Posición superior en 0 */
+    left: 0; /* Posición izquierda en 0 */
+    width: 100%; /* Anchura completa de la pantalla */
+    height: 100%; /* Altura completa de la pantalla */
+    z-index: -1; /* Coloca el video detrás de otros elementos */
+    overflow: hidden; /* Oculta cualquier contenido desbordado */
 }
 
 #bgVideo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; /* Anchura completa del video */
+    height: 100%; /* Altura completa del video */
+    object-fit: cover; /* Cubre el área sin distorsionar */
 }
+
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: absolute; /* Posición absoluta para superponer elementos */
+    top: 0; /* Posición superior en 0 */
+    left: 0; /* Posición izquierda en 0 */
+    width: 100%; /* Anchura completa */
+    height: 100%; /* Altura completa */
+    display: flex; /* Usa Flexbox para el diseño */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
 }
+
 .game-container {
-    text-align: center;
+    text-align: center; /* Centra el texto */
 }
 
 #timer {
-    font-size: 1.5em;
-    margin: 10px 0;
+    font-size: 1.5em; /* Tamaño de fuente más grande para el temporizador */
+    margin: 10px 0; /* Márgenes superior e inferior de 10px */
 }
 
 .game-board {
-    display: grid;
-    grid-template-columns: repeat(4, 100px);
-    grid-gap: 10px;
-    justify-content: center;
-    margin-top: 20px;
+    display: grid; /* Usa Grid Layout para el tablero del juego */
+    grid-template-columns: repeat(4, 100px); /* 4 columnas de 100px cada una */
+    grid-gap: 10px; /* Espacio de 10px entre las tarjetas */
+    justify-content: center; /* Centra el tablero horizontalmente */
+    margin-top: 20px; /* Márgenes superiores de 20px */
 }
 
 .card {
-    width: 100px;
-    height: 150px;
-    background-color: #fff;
-    border: 2px solid #ccc;
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.5s;
-    overflow: hidden;
-    perspective: 1000px;
+    width: 100px; /* Anchura de la tarjeta */
+    height: 150px; /* Altura de la tarjeta */
+    background-color: #fff; /* Color de fondo blanco */
+    border: 2px solid #ccc; /* Borde gris claro de 2px */
+    border-radius: 8px; /* Esquinas redondeadas */
+    display: flex; /* Usa Flexbox para el diseño */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
+    transition: transform 0.5s; /* Transición suave al voltear la tarjeta */
+    overflow: hidden; /* Oculta cualquier contenido desbordado */
+    perspective: 1000px; /* Da perspectiva 3D a la tarjeta */
 }
 
 .card img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-    display: none;
+    max-width: 100%; /* Anchura máxima del 100% de la tarjeta */
+    max-height: 100%; /* Altura máxima del 100% de la tarjeta */
+    object-fit: contain; /* Contiene la imagen sin distorsión */
+    display: none; /* Oculta la imagen inicialmente */
 }
 
 .card.flipped img {
-    display: block;
+    display: block; /* Muestra la imagen cuando la tarjeta está volteada */
 }
 
 .card.flipped {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /* Rota la tarjeta en el eje Y */
 }
 
 .modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background: rgba(0, 0, 0, 0.8);
-    animation: fadeIn 1s;
+    display: none; /* Oculta el modal inicialmente */
+    position: fixed; /* Fija el modal en su posición */
+    z-index: 1; /* Coloca el modal por encima de otros elementos */
+    left: 0; /* Posición izquierda en 0 */
+    top: 0; /* Posición superior en 0 */
+    width: 100%; /* Anchura completa de la pantalla */
+    height: 100%; /* Altura completa de la pantalla */
+    overflow: auto; /* Añade scroll si es necesario */
+    background: rgba(0, 0, 0, 0.8); /* Fondo negro semi-transparente */
+    animation: fadeIn 1s; /* Animación de aparición suave */
 }
 
 .modal-content {
-    background: linear-gradient(10deg, #8B0000, #2F4F4F, #8B0000);
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    border-radius: 15px;
-    width: 80%;
-    max-width: 400px;
-    text-align: center;
-    animation: slideIn 0.5s;
+    background: linear-gradient(10deg, #8B0000, #2F4F4F, #8B0000); /* Gradiente de fondo */
+    margin: 15% auto; /* Centra el modal vertical y horizontalmente */
+    padding: 20px; /* Padding de 20px */
+    border: 1px solid #888; /* Borde gris */
+    border-radius: 15px; /* Esquinas redondeadas */
+    width: 80%; /* Anchura del 80% */
+    max-width: 400px; /* Anchura máxima de 400px */
+    text-align: center; /* Centra el texto */
+    animation: slideIn 0.5s; /* Animación de deslizamiento suave */
 }
 
 .modal-content h2 {
-    color: #fff;
+    color: #fff; /* Color de texto blanco */
 }
+
 .modal-content img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100%; /* Anchura máxima del 100% */
+    height: auto; /* Altura automática para mantener la proporción */
     border-radius: 8px; /* Opcional: añade borde redondeado a la imagen */
 }
 
@@ -128,36 +132,36 @@ h1, #timer{
 }
 
 .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+    color: #aaa; /* Color gris claro */
+    float: right; /* Flota a la derecha */
+    font-size: 28px; /* Tamaño de fuente grande */
+    font-weight: bold; /* Fuente en negrita */
 }
 
 .close:hover,
 .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+    color: black; /* Cambia a negro al pasar o enfocar */
+    text-decoration: none; /* Sin subrayado */
+    cursor: pointer; /* Cambia el cursor al pasar */
 }
 
 .buttons {
-    margin-top: 20px;
+    margin-top: 20px; /* Márgenes superiores de 20px */
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 1em;
-    margin: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    background-color: #8B0000;
-    color: #fff;
+    padding: 10px 20px; /* Padding de 10px en vertical y 20px en horizontal */
+    font-size: 1em; /* Tamaño de fuente de 1em */
+    margin: 10px; /* Márgenes de 10px */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Esquinas redondeadas */
+    cursor: pointer; /* Cambia el cursor al pasar */
+    transition: background-color 0.3s, transform 0.3s; /* Transiciones suaves */
+    background-color: #8B0000; /* Color de fondo rojo oscuro */
+    color: #fff; /* Color de texto blanco */
 }
 
 button:hover {
-    background-color: #555;
-    transform: scale(1.1);
+    background-color: #555; /* Cambia el fondo a gris oscuro al pasar */
+    transform: scale(1.1); /* Aumenta el tamaño al pasar */
 }

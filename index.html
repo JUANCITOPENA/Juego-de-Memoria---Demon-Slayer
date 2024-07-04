@@ -2,37 +2,72 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <!-- Establece el juego de caracteres a UTF-8 -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Ajusta el ancho de la página para que coincida con el ancho del dispositivo del usuario -->
   <title>Juego de Memoria - Demon Slayer</title>
+  <!-- Título de la página -->
   <link rel="stylesheet" href="style.css">
+  <!-- Vincula el archivo CSS externo -->
 </head>
 <body>
+  <!-- Fondo de video -->
   <div class="video-background">
     <video autoplay muted loop id="bgVideo">
+      <!-- Reproduce el video automáticamente, sin sonido, y en bucle -->
       <source src="demonslayer.mp4" type="video/mp4">
+      <!-- Fuente del video en formato MP4 -->
       Tu navegador no soporta la etiqueta de video.
+      <!-- Mensaje mostrado si el navegador no soporta videos -->
     </video>
   </div>
+
+  <!-- Contenedor principal del juego -->
   <div class="game-container">
     <h1>Juego de Memoria - Demon Slayer</h1>
+    <!-- Título del juego -->
     <div id="timer">Tiempo restante: 60s</div>
+    <!-- Temporizador del juego -->
     <div class="game-board" id="gameBoard">
-      <!-- Las tarjetas se generarán aquí -->
+      <!-- Tablero del juego donde se generarán las tarjetas -->
     </div>
   </div>
 
+  <!-- Modal de Game Over -->
   <div id="modal" class="modal">
     <div class="modal-content">
       <span class="close" id="closeModal">&times;</span>
+      <!-- Botón para cerrar el modal -->
       <h2>Game Over...🤭</h2>
+      <!-- Mensaje de Game Over -->
       <img class="game_over" src="images/game_over.gif" alt="Game Over">
+      <!-- Imagen animada de Game Over -->
       <div class="buttons">
         <button id="restartGame">Iniciar nueva partida</button>
+        <!-- Botón para reiniciar el juego -->
         <button id="closeGame">Cerrar</button>
+        <!-- Botón para cerrar el juego -->
       </div>
     </div>
   </div>
 
+  <!-- Modal de Ganador -->
+  <div id="wonModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeWonModal">&times;</span>
+      <!-- Botón para cerrar el modal -->
+      <h2>¡Has Ganado! 👍✅</h2>
+      <!-- Mensaje de victoria -->
+      <div class="buttons">
+        <button id="restartWonGame">Iniciar nueva partida</button>
+        <!-- Botón para reiniciar el juego -->
+        <button id="closeWonGame">Cerrar</button>
+        <!-- Botón para cerrar el juego -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Archivo JavaScript externo -->
   <script src="script.js"></script>
 </body>
 </html>
